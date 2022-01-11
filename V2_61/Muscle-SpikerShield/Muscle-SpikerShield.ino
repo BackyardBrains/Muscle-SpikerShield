@@ -1,24 +1,10 @@
-/*
+ /*
   * ----------------------------------------------------------------------------------------------------
   * Backyard Brains 23. Jan. 2018
   * 
   * Muscle SpikerShield with HHI, Claw, LEDs and communication with Spike Recorder integrated.
-  * This code needs envelope hardware in order to function. 
-  * 
-  * Pins:
-  * D2 - Claw
-  * D3 - HHI
-  * D4 - Button - claw default state
-  * D5 - AUX - debug
-  * D6 - AUX - debug
-  * D7 - Button - sensitivity
-  * D8 - LED
-  * D9 - LED
-  * D10 - LED
-  * D11 - LED
-  * D12 - LED
-  * D13 - LED
-  * 
+  * This code does not need envelope in order to function. It calculates envelope for LEDs, HHI and the claw
+  * V0.3
   * Written by Stanislav Mircic
   *
   * ----------------------------------------------------------------------------------------------------
@@ -36,7 +22,7 @@
 
 #define CURRENT_SHIELD_TYPE "HWT:MUSCLESS;"     //type of the board. Used for detection of shield 
                                                 //by desktop Spike Recorder application
-#define NOISE_FLOOR_FOR_ENVELOPE 30            //must be greater than 512 and less than 1023
+#define NOISE_FLOOR_FOR_ENVELOPE 530            //must be greater than 512 and less than 1023
 
 #define ANTI_FLICKERING_TIME_IN_MS 50           //relay refresh period in ms
 
