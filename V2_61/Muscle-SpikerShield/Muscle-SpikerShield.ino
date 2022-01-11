@@ -5,7 +5,7 @@
   * Muscle SpikerShield with HHI, Claw, LEDs and communication with Spike Recorder integrated.
   * This code does not need envelope in order to function. It calculates envelope for LEDs, HHI and the claw
   * V0.4
-  * made for Muslce SpikerSHield V2.61
+  * made for Muscle SpikerShield V2.61
   * Written by Stanislav Mircic
   *
   * ----------------------------------------------------------------------------------------------------
